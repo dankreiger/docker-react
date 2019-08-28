@@ -1,5 +1,7 @@
 # docker-react
 
+[![Build Status](https://travis-ci.org/dankreiger/docker-react.svg?branch=master)](https://travis-ci.org/dankreiger/docker-react)
+
 ## Development
 
 ### build dev image
