@@ -6,7 +6,15 @@
 docker build . -f Dockerfile.dev
 ```
 
-### map ports and run
+### run docker compose
+
+```sh
+docker-compose up
+```
+
+### Manual without docker compose
+
+##### map ports and run
 
 bookmark node_modules volume and map into app folder
 
