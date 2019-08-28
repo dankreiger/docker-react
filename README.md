@@ -1,8 +1,8 @@
 # docker-react
 
-[![Build Status](https://travis-ci.org/dankreiger/docker-react.svg?branch=master)](https://travis-ci.org/dankreiger/docker-react)
-
 ## Development
+
+Note: deploy block in `travis.yml` can be uncommented and customized for a new elastic beanstalk app
 
 ### build dev image
 
