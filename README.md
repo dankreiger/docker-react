@@ -1,9 +1,13 @@
+# docker-react
+
 ### React Docker Setup
+
+## Development
 
 ### build dev image
 
 ```sh
-docker build . -f Dockerfile.dev
+docker-compose up --build
 ```
 
 ### run docker compose
@@ -14,6 +18,12 @@ docker-compose up
 
 ### Manual without docker compose
 
+### build dev image
+
+```sh
+docker build . -f Dockerfile.dev
+```
+
 ##### map ports and run
 
 bookmark node_modules volume and map into app folder
@@ -22,4 +32,17 @@ colon maps from inside to outside container - without colon just uses container
 
 ```sh
 docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app IMAGE_ID
+```
+
+### run tests
+
+```sh
+docker run -it IMAGE_ID npm run test
+```
+
+## Prod
+
+```sh
+docker build . # get container id at end
+docker run -p 8080:80 CONTAINER_ID
 ```
