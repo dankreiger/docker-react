@@ -1,7 +1,5 @@
 # docker-react
 
-### React Docker Setup
-
 ## Development
 
 ### build dev image
