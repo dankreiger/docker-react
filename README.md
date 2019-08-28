@@ -41,6 +41,6 @@ docker run -it IMAGE_ID npm run test
 ## Prod
 
 ```sh
-docker build . # get container id at end
-docker run -p 8080:80 CONTAINER_ID
+docker build . # get image id at end
+docker run -p 8080:80 IMAGE_ID # visit localhost:8080
 ```
